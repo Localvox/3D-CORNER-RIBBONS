@@ -1,8 +1,6 @@
 .demo-body {
 	margin: 0;
 	padding: 0;
-}
-.demo-body {
 	background: #ebebeb;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	font-weight: 300;
@@ -53,17 +51,17 @@ hr {
 	vertical-align: top;
 }
 
-h1 {
+.demo-body h1 {
 	margin: 0 auto 15px;
 	color: #000;
 	font-size: 36px;
 }
-h2 {
+.demo-body h2 {
 	margin: 0 auto;
 	color: #707070;
 	font-size: 22px;
 }
-h3 {
+.demo-body h3 {
 	height: 240px;
 	margin: 0 auto;
 	background: url('../img/example-laptop.png') 50% 50% no-repeat;
