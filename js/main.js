@@ -3,6 +3,7 @@ $(document).ready(function() {
 	// element for building ribbons
 	var $ribbonBuilder = $('#ribbon-builder');
 	var $ribbonBuilderRibbon = $ribbonBuilder.find('.ribbon');
+	var $ribbonBuilderRibbonText = $ribbonBuilderRibbon.find('.text');
 	var $ribbonBuilderColor = $ribbonBuilder.find('.color-block');
 	var $ribbonBuilderSize = $ribbonBuilder.find('.size-block');
 	var $ribbonBuilderText = $ribbonBuilder.find('.banner-text-block');
@@ -51,8 +52,6 @@ $(document).ready(function() {
 
 	$ribbonBuilderText.on('focus mouseup keyup', function(e) {
 
-		this.select();
-
 		if (e.type == 'mouseup') {
 
 			e.preventDefault();
@@ -61,9 +60,13 @@ $(document).ready(function() {
 
 			text = $(this).val();
 
-			$ribbonBuilderText.html(text);
+			$ribbonBuilderRibbonText.html(text);
 
 			prettyPrintCode();
+
+		} else if (e.type == 'focus') {
+
+			this.select();
 
 		}
 
