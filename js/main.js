@@ -22,11 +22,10 @@ $(document).ready(function() {
 
 	}
 
-
 	$ribbonBuilderColor.on('click', function() {
 
 		color = $(this).attr('data-color');
-		ribbonClass = 'ribbon' + (size != '' ? ' ribbon-'+size : '') + ' ribbon-'+color;
+		ribbonClass = 'ribbon' + (size !== '' ? ' ribbon-'+size : '') + ' ribbon-'+color;
 
 		$ribbonBuilderColor.removeClass('active');
 		$(this).addClass('active');
@@ -40,7 +39,7 @@ $(document).ready(function() {
 	$ribbonBuilderSize.on('click', function() {
 
 		size = $(this).attr('data-size');
-		ribbonClass = 'ribbon' + (size != '' ? ' ribbon-'+size : '') + ' ribbon-'+color;
+		ribbonClass = 'ribbon' + (size !== '' ? ' ribbon-'+size : '') + ' ribbon-'+color;
 
 		$ribbonBuilderSize.removeClass('active');
 		$(this).addClass('active');
@@ -50,25 +49,26 @@ $(document).ready(function() {
 
 	});
 
-	$ribbonBuilder.find('.banner-text-block').on('focus mouseup keyup', function() {
+	$ribbonBuilderText.on('focus mouseup keyup', function(e) {
 
 		this.select();
 
+		if (e.type == 'mouseup') {
+
+			e.preventDefault();
+
+		} else if (e.type == 'keyup') {
+
+			text = $(this).val();
+
+			$ribbonBuilderText.html(text);
+
+			prettyPrintCode();
+
+		}
+
 	});
 
-	$ribbonBuilder.find('.banner-text-block').on('mouseup', function(e) {
-		e.preventDefault();
-	});
-
-	$ribbonBuilder.find('.banner-text-block').on('keyup', function() {
-
-		text = $(this).val();
-
-		$ribbonBuilderText.html(text);
-
-		prettyPrintCode();
-
-	});
 
 	$('pre').find('code').each(function() {
 

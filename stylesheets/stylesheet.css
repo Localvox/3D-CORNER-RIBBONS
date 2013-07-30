@@ -51,8 +51,9 @@ body {
   font-size: 15px;
   line-height: 1.5; 
   background: #fafafa url(../images/body-bg.jpg) 0 0 repeat;
-  font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 400;
+  -webkit-font-smoothing: antialiased;
   color: #666;
 }
 
@@ -99,7 +100,7 @@ header h2 {
 }
 
 #main-content {
-  width: 690px;
+  width: 790px;
   float: left;
 }
 
@@ -108,7 +109,7 @@ header h2 {
 }
 
 aside#sidebar {
-  width: 200px;
+  width: 100px;
   padding-left: 20px;
   min-height: 504px;
   float: right;
@@ -169,12 +170,14 @@ code {
 }
 
 pre {
-  padding: 20px;
-  background: #fff;
+  margin: 0 !important;
+  padding: 0;
+  /* background: #fff;
   text-shadow: none;
   overflow: auto;
-  border: solid 1px #f2f2f2;
+  border: solid 1px #f2f2f2; */
 }
+
 pre code {
   color: #2879d0;
   background-color: #fff;
@@ -190,12 +193,10 @@ ul, ol, dl {
 /* COMMON STYLES */
 
 hr {
-  height: 1px;
-  line-height: 1px;
-  margin-top: 1em;
-  padding-bottom: 1em;
   border: none;
-  background: transparent url('../images/hr.png') 0 0 no-repeat;
+  border-top: 1px solid #ebebeb;
+  margin: 20px 0;
+  padding: 0;
 }
 
 table {
