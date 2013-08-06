@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script src="js/main.js"></script>
+<script src="lib/google-code-prettify/run_prettify.js?lang=css"></script>
+<script src="lib/google-code-prettify/prettify.js?lang=css"></script>
+<link rel="stylesheet" type="text/css" href="css/example.css" />
+<link rel="stylesheet" type="text/css" href="css/3d-corner-ribbons.css" />
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="shortcut icon" href="http://marketmesuite.com/mms/tmpl/assets/img/favicon.png?v=2"/>
+<title>3D Corner Ribbons Using Pure CSS</title>
+</head>
+<body>
+<header>
+<div class="inner">
+	<h1 class="align-center">3D Corner Ribbons Using Pure CSS</h1>
+	<h2 class="align-center">Spruce Up Your Pricing and Landing Pages</h2>
+</div>
+</header>
+<div id="content-wrapper">
+	<div class="inner clearfix">
+		<section id="main-content">
+			<h3 class="menu align-center">
+				<a href="#options">Size &amp; Color Options</a> | <a href="#usage">Implementation &amp; Usage</a> | <a href="#final">Final Result</a> | <a href="#build-ribbon">Build Your Own Ribbon</a>
+			</h3>
+
+
+<hr id="options" />
+
+<br />
+
+<div class="example-header">&nbsp;</div>
+<div class="example-header"><strong>SMALL</strong><br/><code>.ribbon-small</code></div>
+<div class="example-header"><strong>DEFAULT</strong><br/>&nbsp;</div>
+<div class="example-header"><strong>LARGE</strong><br/><code>.ribbon-large</code></div>
+
+<br />
+<br />
+
+<!-- YELLOW RIBBON -->
+
+<div class="example-header side">
+	<strong>YELLOW</strong><br />
+	<code>.ribbon-yellow</code><br />
+	<div class="color-block" data-color="yellow">
+		<div class="color-1"></div>
+		<div class="color-2"></div>
+	</div>
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-small ribbon-yellow">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-yellow">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-large ribbon-yellow">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<br />
+
+<!-- ORANGE RIBBON -->
+
+<div class="example-header side">
+	<strong>ORANGE</strong><br />
+	<code>.ribbon-orange</code><br />
+	<div class="color-block" data-color="orange">
+		<div class="color-1"></div>
+		<div class="color-2"></div>
+	</div>
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-small ribbon-orange">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-orange">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-large ribbon-orange">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<br />
+
+<!-- RED RIBBON -->
+
+<div class="example-header side">
+	<strong>RED</strong><br />
+	<code>.ribbon-red</code><br />
+	<div class="color-block" data-color="red">
+		<div class="color-1"></div>
+		<div class="color-2"></div>
+	</div>
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-small ribbon-red">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-red">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-large ribbon-red">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<br />
+
+<!-- GREEN RIBBON -->
+
+<div class="example-header side">
+	<strong>GREEN</strong>*<br />
+	<code>.ribbon-green</code><br />
+	<div class="color-block" data-color="green">
+		<div class="color-1"></div>
+		<div class="color-2"></div>
+	</div>
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-small ribbon-green">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-green">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-large ribbon-green">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<br />
+
+<!-- LIGHT BLUE RIBBON -->
+
+<div class="example-header side">
+	<strong>LIGHT BLUE</strong><br />
+	<code>.ribbon-blue-light</code><br />
+	<div class="color-block" data-color="blue-light">
+		<div class="color-1"></div>
+		<div class="color-2"></div>
+	</div>
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-small ribbon-blue-light">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-blue-light">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-large ribbon-blue-light">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<br />
+
+<!-- BLUE RIBBON -->
+
+<div class="example-header side">
+	<strong>BLUE</strong><br />
+	<code>.ribbon-blue</code><br />
+	<div class="color-block" data-color="blue">
+		<div class="color-1"></div>
+		<div class="color-2"></div>
+	</div>
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-small ribbon-blue">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-blue">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-large ribbon-blue">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<br />
+
+<!-- MarketMeSuite BLUE RIBBON -->
+
+<div class="example-header side">
+	<strong>MarketMeSuite<sup>™</sup> BLUE</strong><br />
+	<code>.ribbon-blue-mms</code><br />
+	<div class="color-block" data-color="blue-mms">
+		<div class="color-1"></div>
+		<div class="color-2"></div>
+	</div>
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-small ribbon-blue-mms">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-blue-mms">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-large ribbon-blue-mms">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<br />
+
+<!-- PURPLE RIBBON -->
+
+<div class="example-header side">
+	<strong>PURPLE</strong><br />
+	<code>.ribbon-purple</code><br />
+	<div class="color-block" data-color="purple">
+		<div class="color-1"></div>
+		<div class="color-2"></div>
+	</div>
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-small ribbon-purple">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-purple">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-large ribbon-purple">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<br />
+
+<!-- PINK RIBBON -->
+
+<div class="example-header side">
+	<strong>PINK</strong><br />
+	<code>.ribbon-pink</code><br />
+	<div class="color-block" data-color="pink">
+		<div class="color-1"></div>
+		<div class="color-2"></div>
+	</div>
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-small ribbon-pink">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-pink">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-large ribbon-pink">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<br />
+
+<!-- BLACK RIBBON -->
+
+<div class="example-header side">
+	<strong>BLACK</strong><br />
+	<code>.ribbon-black</code><br />
+	<div class="color-block" data-color="black">
+		<div class="color-1"></div>
+		<div class="color-2"></div>
+	</div>
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-small ribbon-black">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-black">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<div class="example-block example-options">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-large ribbon-black">
+		<div class="banner">
+			<div class="text">My Ribbon Text</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+</div>
+
+<br />
+<br />
+
+<div><strong>*</strong>The green color class <code>.ribbon-green</code> may be excluded as the default is the green ribbon color.</div>
+
+<hr id="usage" />
+
+<h2>Example Implementation & Usage:</h2>
+
+<p>In addition to including the <a href="css/3d-corner-ribbons.css"><code>3d-corner-ribbons.css</code></a> file in the head of your HTML file, you will need to create a parent div or element with <code>position: relative</code>.  Within this element, you will place the ribbon HTML code, as shown below.</p>
+<h3>CSS</h3>
+<p>Example <code>div</code> element with relative positioning and other styling:</p>
+<pre><code class="prettyprint linenums lang-css">
+.example-block {
+	position: relative;
+	margin: 50px auto;
+	width: 400px;
+	background: #fff;
+	border: 1px solid #aaaeb0;
+	border-radius: 4px;
+	padding: 20px 0;
+	text-align: center;
+}
+</code></pre>
+
+<h3>HTML</h3>
+<p>Just the ribbon portion:</p>
+<pre>
+<code class="prettyprint linenums lang-html">
+<div class="ribbon ribbon-red">
+	<div class="banner">
+		<div class="text">30 Day Free Trial</div>
+	</div>
+</div>
+</code></pre>
+<p>Ribbon placed within a relative positioned <code>div</code> element:</p>
+<pre><code class="prettyprint linenums lang-html">
+<div class="example-block">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-red">
+		<div class="banner">
+			<div class="text">30 Day Free Trial</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+	<div class="headline">Professional</div>
+	<div class="tagline">Perfect for business growth.</div>
+	<div class="price">$15/month</div>
+	<a class="action-button">Get Professional</a>
+</div>
+</code></pre>
+
+<hr id="final" />
+
+<h2>The Final Result:</h2>
+<div class="example-block">
+	<!-- START RIBBON -->
+	<div class="ribbon ribbon-red">
+		<div class="banner">
+			<div class="text">30 Day Free Trial</div>
+		</div>
+	</div>
+	<!-- END RIBBON -->
+	<div class="headline">Professional</div>
+	<div class="tagline">Perfect for business growth.</div>
+	<div class="price">$15/month</div>
+	<a class="action-button">Get Professional</a>
+</div>
+
+<p>The rest of the styling for the example above can be found in the <a href="css/example.css"><code>example.css</code></a> file.</p>
+
+<hr id="build-ribbon" />
+
+<h2>Build Your Own Ribbon:</h2>
+
+<div id="ribbon-builder" class="example-block user-control">
+
+<!-- START RIBBON -->
+<div class="ribbon ribbon-red">
+	<div class="banner">
+		<div class="text">30 Day Free Trial</div>
+	</div>
+</div>
+<!-- END RIBBON -->
+
+<div class="headline">Headline</div>
+<div class="tagline">Tagline</div>
+<br /><br />
+
+<h5>Choose Color Scheme:</h5>
+<div class="color-block" data-element-name="ribbonColor" data-color="yellow">
+	<div class="color-1"></div>
+	<div class="color-2"></div>
+</div>
+<div class="color-block" data-element-name="ribbonColor" data-color="orange">
+	<div class="color-1"></div>
+	<div class="color-2"></div>
+</div>
+<div class="color-block active" data-element-name="ribbonColor" data-color="red">
+	<div class="color-1"></div>
+	<div class="color-2"></div>
+</div>
+<div class="color-block" data-element-name="ribbonColor" data-color="green">
+	<div class="color-1"></div>
+	<div class="color-2"></div>
+</div>
+<div class="color-block" data-element-name="ribbonColor" data-color="blue-light">
+	<div class="color-1"></div>
+	<div class="color-2"></div>
+</div>
+<div class="color-block" data-element-name="ribbonColor" data-color="blue">
+	<div class="color-1"></div>
+	<div class="color-2"></div>
+</div>
+<div class="color-block" data-element-name="ribbonColor" data-color="blue-mms">
+	<div class="color-1"></div>
+	<div class="color-2"></div>
+</div>
+<div class="color-block" data-element-name="ribbonColor" data-color="purple">
+	<div class="color-1"></div>
+	<div class="color-2"></div>
+</div>
+<div class="color-block" data-element-name="ribbonColor" data-color="pink">
+	<div class="color-1"></div>
+	<div class="color-2"></div>
+</div>
+<div class="color-block" data-element-name="ribbonColor" data-color="black">
+	<div class="color-1"></div>
+	<div class="color-2"></div>
+</div>
+
+<h5>Choose Ribbon Size:</h5>
+<div class="size-block small" data-size="small"><span>Small</span></div>
+<div class="size-block default active" data-size=""><span>Default</span></div>
+<div class="size-block large" data-size="large"><span>Large</span></div>
+
+<h5>Change Ribbon Text:</h5>
+<input type="text" class="banner-text-block" data-element-name="ribbonText" value="30 Day Free Trial" />
+
+</div>
+<br /><br />
+
+<pre>
+<code id="ribbon-builder-code" class="prettyprint linenums lang-html"></code>
+</pre>
+
+
+<br />
+<br />
+
+
+</section>
+
+
+</div>
+</div>
+
+</body>
+</html>
